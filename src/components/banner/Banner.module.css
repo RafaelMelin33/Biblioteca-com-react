@@ -1,0 +1,32 @@
+.fundoBanner{
+    background-image: linear-gradient(to right, #001f3fe8 5%, rgba(255, 255, 255, 0) 90%) , url(/public/fundoBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    height: 550px;
+}
+
+.destaque{
+    background-color: rgba(255, 255, 255, 0.268);
+    border: 1px solid white;
+    font-size: 10px;
+    padding: 4px 15px;
+    letter-spacing: 3px;
+}
+
+.bannerH1{
+    font-size: 4.5em;
+    color: white;
+}
+
+.colorGradiente{
+    background-image: linear-gradient(to right, white, rgb(0, 0, 0));
+    background-clip: text;
+    color: transparent;
+}
+
+.fundoBanner p{
+    color: var(--cinza-claro);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
