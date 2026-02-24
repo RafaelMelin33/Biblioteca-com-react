@@ -19,6 +19,8 @@ nav a{
     color: var(--cinza);
     transition: .2s;
     letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 nav a:hover{
@@ -31,4 +33,6 @@ nav a:hover{
     color: white;
     border-radius: 20px;
     padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
 }
