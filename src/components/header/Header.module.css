@@ -10,13 +10,13 @@
 }
 
 h1{
-    color: var(--azul-titulo);
+    color: #001F3F;
     font-size: 1.5rem;
     font-weight: 800;
 }
 
 nav a{
-    color: var(--cinza);
+    color: #6b7280;
     transition: .2s;
     letter-spacing: 1px;
     font-size: 12px;
@@ -24,15 +24,16 @@ nav a{
 }
 
 nav a:hover{
-    color: var(--azul-titulo);
+    color: #6b7280;
     transition: .2s;
 }
 
 .btnLoginAdm{
-    background-color: var(--azul-titulo);
+    background-color: #001F3F;
     color: white;
     border-radius: 20px;
     padding: 10px;
     font-size: 12px;
     font-weight: 700;
+    border: none;
 }

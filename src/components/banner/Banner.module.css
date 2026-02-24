@@ -27,7 +27,7 @@
 }
 
 .fundoBanner p{
-    color: var(--cinza-claro);
+    color: #e5e7eb;
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
