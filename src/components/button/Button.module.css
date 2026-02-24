@@ -27,3 +27,8 @@
     background-color: rgba(211, 211, 211, 0.175);
     transition: .3s;
 }
+
+.card{
+    font-size: 10px;
+    border: none;
+}
