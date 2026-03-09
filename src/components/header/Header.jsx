@@ -1,4 +1,5 @@
-import css from './Header.module.css'
+import css from './Header.module.css';
+import {Link} from 'react-router-dom';
 
 export default function Header({ titulo = "BOOK PLUS" }) {
     return (
@@ -29,8 +30,9 @@ export default function Header({ titulo = "BOOK PLUS" }) {
                                             <a href="#">MAIS VENDIDOS</a>
                                         </li>
                                         <li className={'nav-item mt-3 mt-md-0'}>
-                                            <button className={css.btnLoginAdm + ' px-4'}>LOGIN ADMIN</button>
+                                            <Link to='/login' className={css.btnLoginAdm + ' px-4'}>Login ADM</Link>
                                         </li>
+
                                     </ul>
                                 </div>
                             </nav>
