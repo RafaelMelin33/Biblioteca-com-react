@@ -5,6 +5,8 @@ import PaginaHome from "./pages/PaginaHome.jsx";
 import PaginaLogin from "./pages/PaginaLogin.jsx";
 import Input from "./components/input/Input.jsx";
 import PaginaCadastro from "./pages/PaginaCadastro.jsx";
+import PaginaCatalogoLivros from "./pages/PaginaCatalogoLivros.jsx";
+import PaginaDetalhesLivro from "./pages/PaginaDetalhesLivro.jsx";
 
 export default function App() {
     return (
@@ -14,6 +16,8 @@ export default function App() {
                 <Route path={"/"} element={<PaginaHome />} />
                 <Route path={"/login"} element={<PaginaLogin />} />
                 <Route path={"/cadastro"} element={<PaginaCadastro />} />
+                <Route path={"/catalogo-livros"} element={<PaginaCatalogoLivros />} />
+                <Route path={"/detalhe-livro/:id"} element={<PaginaDetalhesLivro />} />
             </Routes>
             {/* <Banner />
             <Main /> */}
