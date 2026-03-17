@@ -8,8 +8,10 @@ export default function Header({ titulo = "BOOK PLUS" }) {
                 <div className="row">
                     <div className="col-12 col-md-6 justify-content-between align-items-center d-block d-md-flex">
                         <div className='d-flex gap-2'>
-                            <img src="/iconeDoLivro.png" alt="Icone livro aberto" className={css.iconLogo} />
-                            <h1 className="">{titulo}</h1>
+                            <Link to={'/'} className='d-flex'>
+                                <img src="/iconeDoLivro.png" alt="Icone livro aberto" className={css.iconLogo} />
+                                <h1 className="">{titulo}</h1>
+                            </Link>
                         </div>
                     </div>
                     <div className={'col-12 col-md-6'}>
@@ -32,7 +34,6 @@ export default function Header({ titulo = "BOOK PLUS" }) {
                                         <li className={'nav-item mt-3 mt-md-0'}>
                                             <Link to='/login' className={css.btnLoginAdm + ' px-4'}>Login ADM</Link>
                                         </li>
-
                                     </ul>
                                 </div>
                             </nav>

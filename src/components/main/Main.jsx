@@ -4,9 +4,10 @@ import BookCard from '../BookCard/BookCard.jsx';
 import Catalogo from "../catalogo/Catalogo.jsx";
 import { Link } from "react-router-dom";
 import Titulo from "../titulo/Titulo.jsx";
+import { useState, useEffect } from 'react';
 
 export default function Main() {
-
+    const [inp, setInp] = useState('')
     return (
         <main className={'pt-5'}>
             <div className="container">
@@ -20,7 +21,7 @@ export default function Main() {
                     <div className='col-12 d-flex justify-content-between align-items-center mb-2'>
                         <div className='row w-100 justify-content-between align-items-center'>
                             <div className="col-12 col-md-6">
-                                <Titulo texto={"Destaques da Semana"}/>
+                                <Titulo texto={"Destaques da Semana"} />
                             </div>
                             <div className="col-12 col-md-6 d-flex justify-content-md-end justify-content-start align-items-center gap-3 mt-3 mt-md-0">
                                 <select name="categorias" id="categorias" className={'rounded-5 p-2 ' + css.select}>
@@ -28,11 +29,12 @@ export default function Main() {
                                     <option value="maisRecentes">Mais recentes</option>
                                     <option value="menorPreco">Menor preço</option>
                                 </select>
+                                <input type="text" name="autor" id="autor" placeholder="Digite um nome de autor" value={inp} onChange={(e) => setInp(e.target.value)} className={'rounded-5 p-2 ' + css.input}/>
                             </div>
                         </div>
                     </div>
 
-                    <Catalogo />
+                    <Catalogo inp={inp} />
 
                     {/*{livros.map((livro, index) => (*/}
                     {/*    <div className='col-md-3 col-12' key={index}>*/}
