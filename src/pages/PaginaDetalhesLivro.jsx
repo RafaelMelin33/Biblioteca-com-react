@@ -32,7 +32,7 @@ export default function PaginaDetalhesLivro() {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <img src={livros.imagem} alt={`Livro ${livros.nome}`} />
+                        <img src={livros.imagem} alt={`Livro ${livros.nome}`} className={"w-100"} />
                     </div>
                     <div className="col">
                         <div class="row">

@@ -40,3 +40,15 @@
     justify-content: center;
     align-items: center;
 }
+
+.editar{
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.excluir{
+    background-color: red;
+    color: white;
+    border: none;
+}
