@@ -38,14 +38,15 @@ export default function PaginaCadastro() {
         <div className={"container"}>
             <div className={"row"}>
                 <div className={"col-sm-12 col d-flex justify-content-center align-items-center"}>
-                    <form className={"w-sm-100 w-75 px-2 py-4 my-4 bg-primary-subtle rounded"}>
+                    <form className={"w-sm-100 w-75 px-2 py-4 my-4 bg-primary-subtle rounded"} action={'cadastrar'}>
                         <Input htmlfor={"imagem"} label={"Insira o link da imagem"} tipo={"text"} value={imagem} onChange={(e) => setImagem(e.target.value)} />
                         <Input htmlfor={"titulo"} label={"Insira o título do livro"} tipo={"text"} value={titulo} onChange={(e) => setTitulo(e.target.value)} />
                         <Input htmlfor={"autor"} label={"Insira o autor do livro"} tipo={"text"} value={autor} onChange={(e) => setAutor(e.target.value)} />
                         <Input htmlfor={"categoria"} label={"Insira a categoria do livro"} tipo={"text"} value={categoria} onChange={(e) => setCategoria(e.target.value)} />
                         <Input htmlfor={"descricao"} label={"Insira a descrição do livro"} tipo={"text"} value={descricao} onChange={(e) => setDescricao(e.target.value)} />
                         <Input htmlfor={"faixa_etaria"} label={"Insira a faixa etária do livro"} tipo={"text"} value={faixa_etaria} onChange={(e) => setFaixa_etaria(e.target.value)} />
-                        <Button texto={"Cadastrar"} tipo={"form"} onClick={cadastrar}/>
+                        <Button texto={"Cadastrar"} tipo={"form"} onClick={cadastrar} type={'button'}/>
+                        <Button texto={"Voltar para dashboard do adm"} tipo={"form"} link={true} to={"/dashboard-adm"}/>
                     </form>
                 </div>
             </div>

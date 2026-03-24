@@ -3,6 +3,7 @@ import Titulo from "../components/titulo/Titulo.jsx";
 import {useEffect, useState} from "react";
 import css from "../components/main/Main.module.css";
 import {useNavigate} from "react-router-dom";
+import Button from "../components/button/Button.jsx";
 
 export default function PaginaDashAdm(){
     const [inp,setInp] = useState('')
@@ -20,6 +21,8 @@ export default function PaginaDashAdm(){
         }
     }, [])
 
+
+
     return (
         <div className={'container'}>
             <div className={'row'}>
@@ -27,8 +30,9 @@ export default function PaginaDashAdm(){
                     <Titulo texto={'Dashboard do ADM'}/>
                     <p>Bem vindo {nome}</p>
                 </div>
+                <Button texto={'Cadastrar livro'} tipo={'form'} link={true} to={'/cadastro'}/>
                 <input type="text" name="autor" id="autor" placeholder="Digite um nome de autor" value={inp} onChange={(e) => setInp(e.target.value)} className={'mb-3 rounded-5 p-2 ' + css.input}/>
-                <Catalogo inp={inp} setInp={setInp} />
+                <Catalogo inp={inp} setInp={setInp} logado={true} />
             </div>
         </div>
     )

@@ -43,6 +43,7 @@
     overflow: hidden;
     height: 356px;
     position: relative;
+    border-radius: 10px;
 }
 
 .botaoSobreposto {
@@ -85,4 +86,8 @@
     to {
         transform: translateY(-80px);
     }
+}
+
+.logado{
+    border-radius: 0 0 10px 10px;
 }

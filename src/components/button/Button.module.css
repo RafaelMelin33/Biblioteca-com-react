@@ -42,13 +42,16 @@
 }
 
 .editar{
-    background-color: blue;
+    border: 2px solid blue;
     color: white;
-    border: none;
+    background-color: transparent;
+    background-color: white;
+    color: blue;
 }
 
 .excluir{
-    background-color: red;
+    border: 2px solid red;
     color: white;
-    border: none;
+    background-color: white;
+    color: red;
 }
